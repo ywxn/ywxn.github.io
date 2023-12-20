@@ -16,7 +16,7 @@
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 1em 0;
+            padding: 10px;
         }
 
         section {
@@ -50,12 +50,33 @@
             text-decoration: underline;
         }
     </style>
+
+    <script>
+        // Function to simulate typing effect for the title
+        function typeTitle(title, index) {
+            document.title = title.substring(0, index);
+            if (index < title.length) {
+                setTimeout(function () {
+                    typeTitle(title, index + 1);
+                }, 100); // Adjust the typing speed by changing the timeout value
+            }
+        }
+
+        // Call the function when the window is loaded
+        window.onload = function () {
+            var originalTitle = document.title; // Store the original title
+            document.title = ""; // Set an empty title initially
+            typeTitle(originalTitle, 0); // Start the typing effect
+        };
+    </script>
+
 </head>
 <body>
 
     <header>
         <h1>Neel Troeger</h1>
-        <p>Software Developer</p>
+        <h3>Computer Science and Economics Major at Whitman College</h3>
+        <p>Welcome to my portfolio! Here are some of the projects I've worked on for class and outside.</p>
     </header>
 
     <section>
@@ -63,25 +84,31 @@
         
         <ul>
             <li>
-                <h3>Big Data Final Project</h3>
-                <p>This project involved creating a neural net to calculate whether a movie would pass the Bechdel test or not based on input data.</p>
+                <h3>Reel Equality: Quantifying Gender Representation In Film with The Bechdel Test</h3>
+                <p>This project involved creating a neural net to calculate whether a movie would pass the Bechdel test or not based on input data, as well as sentiment analysis and data representation.</p>
                 <a href="https://github.com/erinjar/BigDataFinalProject">GitHub Repository</a>
             </li>
 
             <li>
-                <h3>2D Platformer Project</h3>
+                <h3>Flowers on the Moon</h3>
+                <p>This was my final project for my game development class. It was meant to be a arena-style shooter based on Devil Daggers and Vampire Survivors.</p>
+                <a href="https://github.com/ywxn/fotm">GitHub Repository</a>
+            </li>
+
+            <li>
+                <h3>Music Time</h3>
                 <p>This was a midterm project for my game development class. I focused on coding while my partners worked on animations and level design.</p>
                 <a href="https://github.com/imvahn/2DPlatformerProject">GitHub Repository</a>
             </li>
 
             <li>
-                <h3>Game Jam</h3>
+                <h3>Slime Jump</h3>
                 <p>This project was created over two days during a game jam in my game development class about two weeks into the semester.</p>
                 <a href="https://github.com/ywxn/GameJam">GitHub Repository</a>
             </li>
 
             <li>
-                <h3>wrsOpti</h3>
+                <h3>WRS Optimization</h3>
                 <p>This project, part of the DENSE project at Whitman College, focused on optimizing the speed at which weighted random solution was performed for a software optimization class.</p>
                 <a href="https://github.com/ywxn/wrsOpti">GitHub Repository</a>
             </li>
