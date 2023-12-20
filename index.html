@@ -3,72 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Your Name - Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
 
         header {
+            background-color: #333;
+            color: #fff;
             text-align: center;
-            margin-bottom: 30px;
+            padding: 1em 0;
         }
 
-        h1 {
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
             color: #333;
         }
 
-        .project-list {
+        ul {
             list-style: none;
             padding: 0;
         }
 
-        .project-list-item {
+        li {
             margin-bottom: 10px;
         }
 
-        .project-link {
-            text-decoration: none;
+        a {
             color: #007BFF;
-            font-weight: bold;
+            text-decoration: none;
         }
 
-        .project-link:hover {
+        a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>Neel Troeger - Portfolio</h1>
-        <p>Welcome to my portfolio. Here are some of the projects I've worked on for class and outside.</p>
+        <h1>Your Name</h1>
+        <p>Software Developer</p>
     </header>
 
     <section>
         <h2>Projects</h2>
-        <ul class="project-list">
-            <li class="project-list-item">
-                <a href="https://github.com/imvahn/2DPlatformerProject" class="project-link" target="_blank">
-                    2D Platformer Project
-                </a>
+        
+        <ul>
+            <li>
+                <h3>Big Data Final Project</h3>
+                <p>This project involved creating a neural net to calculate whether a movie would pass the Bechdel test or not based on input data.</p>
+                <a href="https://github.com/erinjar/BigDataFinalProject">GitHub Repository</a>
             </li>
-            <li class="project-list-item">
-                <a href="https://github.com/erinjar/BigDataFinalProject" class="project-link" target="_blank">
-                    Big Data Final Project
-                </a>
+
+            <li>
+                <h3>2D Platformer Project</h3>
+                <p>This was a midterm project for my game development class. I focused on coding while my partners worked on animations and level design.</p>
+                <a href="https://github.com/imvahn/2DPlatformerProject">GitHub Repository</a>
             </li>
-            <li class="project-list-item">
-                <a href="https://github.com/ywxn/GameJam" class="project-link" target="_blank">
-                    Game Jam
-                </a>
+
+            <li>
+                <h3>Game Jam</h3>
+                <p>This project was created over two days during a game jam in my game development class about two weeks into the semester.</p>
+                <a href="https://github.com/ywxn/GameJam">GitHub Repository</a>
             </li>
-            <li class="project-list-item">
-                <a href="https://github.com/ywxn/wrsOpti" class="project-link" target="_blank">
-                    wrsOpti
-                </a>
+
+            <li>
+                <h3>wrsOpti</h3>
+                <p>This project, part of the DENSE project at Whitman College, focused on optimizing the speed at which weighted random solution was performed for a software optimization class.</p>
+                <a href="https://github.com/ywxn/wrsOpti">GitHub Repository</a>
             </li>
         </ul>
     </section>
+
 </body>
 </html>
